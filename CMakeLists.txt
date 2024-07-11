@@ -168,6 +168,9 @@ else()
     set(RUNTIME_DIR_DEFAULT "${CMAKE_INSTALL_FULL_LOCALSTATEDIR}/run/sddm")
 endif()
 
+# utmps
+find_package(utmps)
+add_feature_info("utmps" UTMPS_FOUND "utmps support")
 
 # Set constants
 set(DATA_INSTALL_DIR            "${CMAKE_INSTALL_FULL_DATADIR}/sddm"                CACHE PATH      "System application data install directory")
